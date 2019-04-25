@@ -15,5 +15,6 @@ class Starship(models.Model):
 
 class Listing(models.Model):
     name = models.CharField(max_length=255)
-    ship_type = models.ForeignKey(Starship, related_name='listings')
+    # https://www.valentinog.com/blog/django-missing-argument-on-delete/
+    ship_type = models.ForeignKey(Starship, related_name='listings', on_delete=models.PROTECT)
     price = models.IntegerField()
