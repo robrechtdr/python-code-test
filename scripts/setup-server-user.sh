@@ -26,7 +26,7 @@ source $PIP_VIRTUALENV_BASE/code-test/bin/activate
 echo -e "\033[0;34m > Installing the pip requirements.\033[0m"
 $PIP_VIRTUALENV_BASE/code-test/bin/pip install -U pip
 $PIP_VIRTUALENV_BASE/code-test/bin/pip install wheel==0.29.0
-$PIP_VIRTUALENV_BASE/code-test/bin/pip install -r /vagrant/requirements.in
+$PIP_VIRTUALENV_BASE/code-test/bin/pip install -r /vagrant/requirements.txt
 
 # setup db state
 cd /vagrant
