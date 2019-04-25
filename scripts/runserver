@@ -6,5 +6,5 @@ until PGPASSWORD=postgres psql --host postgresql --username postgres -c '\l' > /
 done
 
 export PYTHONUNBUFFERED=0
-./manage.py migrate
-./manage.py runserver 0.0.0.0:8008
+./testsite/manage.py migrate
+./testsite/manage.py runserver 0.0.0.0:8008
